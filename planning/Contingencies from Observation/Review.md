@@ -31,6 +31,15 @@ ICRA 2021
 하지만 이러한 방법은 학습 데이터 분포와 테스트 데이터 분포가 작아야 성공적이다.
 
 ## DEEP CONTINGENCY PLANNING
-
+![fig3](./fig3.png)
 
 #### Model Design and Training Details
+\[
+q_\theta(\mathbf{X}_{\leq T}^{1:A} = \mathbf{x}_{\leq T}^{1:A} | \mathbf{o}) = \prod_{t=1}^{T} \prod_{a=1}^{A} q^a(\mathbf{X}_t^a = \mathbf{x}_t^a; \phi_t^a),
+\]
+$\phi^a_t = f^a_\theta(\mathbf{x}_{1:A}^{<t},\,o)$
+$\mathbf{x}_t^a = m(\mathbf{z}_t^a;\phi_t^a)$
+E.g
+$q^a = \mathcal{N}( \cdot | {\{\mu_t^a,\sigma_t^a\}})$ 이면
+$m(\mathbf{z}_t^a;\phi_t^a) = \mu_t^a + \sigma_t^a\mathbf{z}_t^a$이고
+$\bar q^a(\mathbf{z}_t^a) = \mathcal{N}(\mathbf{z}_t^a;0,I)$
