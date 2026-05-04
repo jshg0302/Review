@@ -43,3 +43,7 @@ E.g
 $q^a = \mathcal{N}( \cdot | {\{\mu_t^a,\sigma_t^a\}})$ 이면
 $m(\mathbf{z}_t^a;\phi_t^a) = \mu_t^a + \sigma_t^a\mathbf{z}_t^a$이고
 $\bar q^a(\mathbf{z}_t^a) = \mathcal{N}(\mathbf{z}_t^a;0,I)$
+
+각 time,agent 별 조건부로 구성되어 이들끼리의 곱들이 전체 공동확률을 나타낸다.
+ex) i agent가 t일 때, 그리고 i+1 agent가 t일 때, ...
+
