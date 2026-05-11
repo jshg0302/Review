@@ -47,3 +47,8 @@ $\bar q^a(\mathbf{z}_t^a) = \mathcal{N}(\mathbf{z}_t^a;0,I)$
 각 time,agent 별 조건부로 구성되어 이들끼리의 곱들이 전체 공동확률을 나타낸다.
 ex) i agent가 t일 때, 그리고 i+1 agent가 t일 때, ...
 
+$q^a$는 에이전트 a가 시점 t에 좌표 $x^a_t$​를 가질 확률(밀도) $q^a(x^a_t;\phi^a_t)$을 표현
+$f_\theta^a$는 과거 상태들과 관측 o를 입력으로 받아 그 시점·에이전트의 생성(변환) 파라미터 $\phi^a_t$​를 출력하는 신경망
+$m$는 latent 공간의 샘플 $z^a_t$​를 관측공간의 상태 $x^a_t$​로 바꾸는 가역(invertible) 변환
+
+
